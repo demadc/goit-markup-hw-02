@@ -17,6 +17,3 @@ R - Renamed (The file has been renamed)
 S - Submodule (In repository exists another subrepository)
 
 /!-- Tips--/
-
-<a class="logo decor" href="./index.html">Web<span>Studio</span></a>
-<a class="footer-logo decor" href="./index.html">Web<span>Studio</span></a>
