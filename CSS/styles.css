@@ -13,10 +13,7 @@
 }
 body {
 	font-family: Roboto, sans-serif;
-	color: var(--dark);
-	background-color: #ffffff;
 	font-size: 16px;
-	letter-spacing: 0.02em;
 }
 /* ------------------COMPONENTS------------------- */
 ul {
@@ -43,6 +40,7 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+
 /* ------------------/COMPONENTS------------------- */
 
 /* ------------------HADER------------------- */
@@ -58,52 +56,29 @@ img {
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
 	/* IRIS */
-	color: #4d5ae5;
+	color: var(--primary-brand);
 }
 
 .navigation {
-	font-family: "Roboto";
-	font-style: normal;
 	font-weight: 500;
-	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	/* NAVY BLUE */
-	color: #2e2f42;
+	color: var(--dark);
 }
 
 .header-mail,
 .header-tel {
 	font-weight: 400;
-	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	/* SLATE */
-	color: #434455;
+	color: var(--text);
 }
 
 /* ------------------/HEADER------------------- */
 
 /* ------------------MAIN------------------- */
-.hero-btn {
-	font-family: "Roboto";
-	font-style: normal;
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 1.5;
-	display: flex;
-	align-items: center;
-	letter-spacing: 0.04em;
-	color: var(--white-text-color);
-	background-color: var(--button-active);
-
-	cursor: pointer;
-	border: none;
-	border-radius: 4px;
-}
-.filter {
-}
-
 .hero {
 	font-weight: 700;
 	font-size: 56px;
@@ -111,8 +86,23 @@ img {
 	text-align: center;
 	letter-spacing: 0.02em;
 	background-color: var(--dark);
-	color: #ffffff;
+	color: var(--white-text-color);
 }
+
+.hero-btn {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	display: flex;
+	align-items: center;
+	letter-spacing: 0.04em;
+	color: var(--white-text-color);
+	background-color: var(--primary-brand);
+	cursor: pointer;
+	border: none;
+	border-radius: 4px;
+}
+
 .section-title {
 	font-weight: 700;
 	font-size: 36px;
@@ -121,7 +111,7 @@ img {
 	letter-spacing: 0.02em;
 	text-transform: capitalize;
 	/* NAVY BLUE */
-	color: #2e2f42;
+	color: var(--dark);
 }
 
 .caption {
@@ -130,17 +120,31 @@ img {
 	line-height: 1.2;
 	letter-spacing: 0.02em;
 	/* NAVY BLUE */
-	color: #2e2f42;
+	color: var(--dark);
 }
 .caption-text {
 	font-weight: 400;
-	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	/* SLATE */
-	color: #434455;
+	color: var(--text);
 }
-
+.filter {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.04em;
+	/* IRIS */
+	color: var(--primary-brand);
+}
+.filter:hover,
+.filter:focus {
+	color: var(--white-text-color);
+	background-color: var(--button-active);
+}
 /* ------------------/MAIN------------------- */
 
 /* ------------------FOOTER------------------- */
@@ -150,7 +154,8 @@ img {
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	/* CORNFLOWER */
-	color: #e7e9fc;
+	color: var(--accent);
+
 	background-color: var(--dark);
 }
 /* ------------------/FOOTER------------------- */
